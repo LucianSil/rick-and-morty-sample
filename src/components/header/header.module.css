@@ -1,0 +1,8 @@
+.list {
+  display: flex;
+}
+
+.item {
+  margin-left: 12px;
+  display: block;
+}
