@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import "./character-list.scss";
-
 import Character from "../character/character";
+
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState([]);

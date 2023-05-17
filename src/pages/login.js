@@ -17,7 +17,7 @@ const loginService = async (formData) => {
 const Login = () => {
     const [formData, setFormData] = useState({ email: "teste", password: "" })
 
-    const { token, name } = useSelector(state => state.root.auth)
+    const { token, name } = useSelector(state => state.auth)
     const dispatch = useDispatch()
 
     const onChangeHandler = (event) => {
@@ -45,9 +45,6 @@ const Login = () => {
     // controlled e uncontrolled inputs
     return (
         <div>
-            <p>
-                {JSON.stringify(formData)}</p>
-
             <form onSubmit={onSubmit}>
                 <input type="email" name="email" required onChange={onChangeHandler} value={formData.email} />
                 <input type="password" name="password" required onChange={onChangeHandler} value={formData.password} />
