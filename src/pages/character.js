@@ -1,7 +1,9 @@
 import { useEffect } from "react";
+
 import { useLoaderData, useNavigate } from "react-router-dom";
 
-import Button from "../components/button/button";
+import Button from "_components/button/button";
+
 
 const CharacterPage = () => {
   const characterData = useLoaderData();

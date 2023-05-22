@@ -4,7 +4,6 @@ const initialState = {
     list: []
 }
 
-
 const wishlistSlice = createSlice({
     name: "wishlist",
     initialState,
